@@ -15,19 +15,16 @@ header{
     background: 
     linear-gradient(to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%)),
     url('./images/bg-pattern-intro-mobile.svg') no-repeat center;
-    background-size: cover; /* Ensure the background image covers the entire area */
+    background-size: 250%;
     color: hsl(0, 0%, 100%);
     padding: 1.1rem;
     margin-bottom: 3rem;
     border-bottom-left-radius: 20%;
-    
-
 }
 
 header h1{
     color: hsl(0, 0%, 100%);
     padding: 1rem 0;
-    
 }
 
 header p{
@@ -55,6 +52,16 @@ li{
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: hsla(240, 3%, 79%, 0.493);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 img{
     max-width: 100%;
 }
@@ -62,7 +69,10 @@ img{
 .__nav{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: .5rem;
+    margin: 10px 0;
+
 }
 
 .nav-list-desktop{
@@ -75,20 +85,68 @@ img{
     justify-content: space-between;
 }
 
+.register{
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 1px solid lightgrey;
+    margin-top: 20px;
+}
+
+.register li:nth-child(1), 
+.register li:nth-child(2){
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.register li:nth-child(2){
+    background: 
+    linear-gradient(to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    padding: .4rem 1.5rem;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
 .mobile-close{
     display: none;
 }
 
-.nav-list-mobile{
+.mobile-menu{
     display: none;
-    /* display: grid; */
+}
+
+.reveal-mobile-nav{
+    display: block !important;
+}
+
+.nav-list-mobile{
+    display: grid;
     place-content: center;
-    /* min-height: 100vh; */
     margin: 1rem 0;
     background-color: hsl(0, 0%, 100%);
     color: hsl(208, 49%, 24%);
     padding: 1rem 0;
+    border-radius: 5px;
+    font-weight: 700;
 
+}
+
+.__nav li{
+    padding: 0.4rem 0;
+}
+
+.sub{
+    display: none;
+    width: 100%;
+    padding: 1rem 5rem;
+    background-color: hsl(45, 18%, 96%);
+    border-radius: 5px;
+}
+
+.sub li{
+    color: hsla(208, 49%, 24%, 0.635);
+    padding: 0.2rem 0;
 }
 
 .hero{
@@ -102,15 +160,16 @@ img{
 
 .btn{
     font-weight: 700;
-    padding: 0.6rem 0.9rem;
+    padding: 0.8rem 1rem;
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
+    cursor: pointer;
 }
 
 .btn-1{
     color: hsl(356, 100%, 66%);
     background-color: hsl(0, 0%, 100%);
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .btn-2{
@@ -122,6 +181,7 @@ img{
 .main-1{
     text-align: center;
     padding: 1.1rem;
+    margin-bottom: 200px !important;
     
 }
 
@@ -160,17 +220,231 @@ footer{
 }
 
 
-.main-2{
-    background-color: hsl(237, 23%, 32%);
-    background-image: url(./images/bg-pattern-circles.svg);
+#main-2{
+    background-image: 
+    url('./images/bg-pattern-circles.svg');
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: -100px -200px;
+    background-size: 150%;
+    background-color: hsl(208, 49%, 24%);
+    border-radius: 0 100px 0 100px;
+    padding: 1rem 0;
+    margin-bottom: 50px;
 }
 
-.main-2-img{
-    margin-top: 50px;
+#main-2 img{
+    margin-top: -50%;
+}
+
+.main-2 h3{
+    font-size: 2rem;
+    width: 100%;
+    font-weight: 700;
 }
 
 .main-2 h3, .main-2 p{
     color: hsl(0, 0%, 100%);
+} 
+
+.main-2 p{
+    color: hsl(240, 2%, 79%);
+    padding: 0.5rem 0;
+}
+
+footer div{
+    margin: 20px 0;
+}
+
+footer{
+    background-color: hsl(240, 10%, 16%);
+    padding: 3rem 0;
+    margin-top: 30px;
+    border-top-right-radius: 100px;
+}
+
+footer h4{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+footer p{
+    padding: .2rem 0;
+    color: hsl(240, 2%, 79%);
+}
+
+
+footer img{
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .h__{
+        display: none;
+    }
+    .nav-list-desktop{
+        display: block;
+        display: flex !important;
+    }
+
+    .nav-list-desktop ul:nth-child(1){
+        display: flex;
+    }
+
+    .main-1 h2{
+        margin-top: 80px;
+        padding: 0;
+    }
+    .main-1{
+        margin-bottom: 50px !important;
+    }
+    .main-1 .__hra .text h3{
+        text-align: left;
+        width: 100%;
+    }
+
+     .main-1 .__hra .text p{
+        text-align: left;
+        width: 330px;
+    }
+    
+    .main-1 .__hra{
+        margin-left: 80px;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: space-between;
+        flex-direction: row !important;
+    }
+
+    .main-1 .__hra img{
+        display: flex;
+        align-self: flex-end;
+        width: 600px;
+        margin-right: 60%;
+    }
+
+    header h1{
+        width: 100%;
+        font-size: 2.5rem;
+    }
+
+    header p{
+        font-size: 1.1rem;
+        color: hsla(0, 0%, 100%, 0.671);
+    }
+
+    span{
+        display: inline;
+    }
+
+    #main-2{
+        background-size: 40%;
+    }
+
+    .main-2-hero{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        height: 250px;
+    }
+
+
+    .main-2-hero h3{
+        font-size: 1.2rem;
+    }
+
+    .main-2-hero h3, .main-2-hero p{
+        text-align: left;
+        width: 350px;
+    }
+
+
+    #main-2 img{
+        margin-top: 0;
+        width: 300px;
+    }
+
+    .outro{
+        margin-right: 50px;
+ }
+
+ .outro .__hra{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .outro .__hra .text:nth-child(1){
+     margin-top: 80px;
+ }
+
+ .outro .__hra .text  h3{
+     width: 100%;
+     text-align: left;
+ }
+
+ .outro .__hra .text  p{
+     width: 400px;
+     text-align: left;
+ }
+
+ .outro .__hra img{
+     width: 800px;
+     margin-left: -60%;
+ }
+
+ .footer{
+     width: 85%;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+ }
+}
+
+@media screen and (min-width: 1024px) {
+    .outro img{
+        width: 500px !important;
+    }
+
+    .outro{
+        margin-right: 150px;
+    }
+    .main-1 .__hra .text p{
+        width: 420px;
+    }
+    .outro .__hra .text  p{
+        width: 600px;
+        text-align: left;
+    }
+
+    #main-2{
+        background-size: 40%;
+    }
+
+    .main-2-hero{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        height: 300px;
+    }
+
+    .main-2-hero h3, .main-2-hero p{
+        text-align: left;
+        width: 100%;
+    }
+
+    .main-2-hero h3{
+        font-size: 1.6rem;
+    }
+
+    #main-2 img{
+        margin-top: 0;
+        margin-bottom: -30px;
+        width: 450px;
+    }
 }

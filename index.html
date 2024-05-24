@@ -62,13 +62,14 @@
       <img src="/images/icon-hamburger.svg" alt="icon-hamburger" class="mobile-open">
       <img src="/images/icon-close.svg" alt="icon-close" class="mobile-close">
     </div>
-    <div class="nav-list-mobile">
+    <div class="mobile-menu">
+      <div class="nav-list-mobile">
       <ul>
         <div class="__nav">
           <li>Product</li>
           <img src="/images/icon-arrow-dark.svg" alt="icon-arrow">
         </div>
-        <ul>
+        <ul class="sub">
           <li>Overview</li>
           <li>Pricing</li>
           <li>Marketplace</li>
@@ -79,7 +80,7 @@
           <li>Company</li>
           <img src="/images/icon-arrow-dark.svg" alt="icon-arrow">
         </div>
-        <ul>
+        <ul class="sub">
           <li>About</li>
           <li>Team</li>
           <li>Blog</li>
@@ -89,12 +90,19 @@
           <li>Connect</li>
           <img src="/images/icon-arrow-dark.svg" alt="icon-arrow">
         </div>
-        <ul>
+        <ul class="sub">
           <li>Contact</li>
           <li>Newsletter</li>
           <li>LinkedIn</li>
         </ul>
+        <div class="register">
+          <ul>
+            <li>Login</li>
+            <li class="sign-up">Sign Up</li>
+          </ul>
+        </div>
       </ul>
+    </div>
     </div>
     <div class="hero">
       <h1>A modern <span>publishing platform</span></h1>
@@ -138,15 +146,16 @@
     </div>
   </section>
   <section id="main-2">
-    <img src="/images/illustration-phones.svg" alt="illus-image" class="main-2-img">
-    <div class="main-2">
-      <div class="__hra">
-          <!-- <img src="/images/bg-pattern-circles.svg" alt="illus-image"> -->
-        <div class="text">
-          <h3>State of the Art Infrastructure</h3>
-          <p> With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-          </p>
+    <div class="main-2-hero">
+      <img src="/images/illustration-phones.svg" alt="illus-image" class="main-2-img">
+      <div class="main-2">
+        <div class="__hra">
+          <div class="text">
+            <h3>State of the Art Infrastructure</h3>
+            <p> With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+              This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -179,30 +188,33 @@
     </div>
   </section>
   <footer>
+    <div class="footer">
     <div>
       <img src="/images/logo.svg" alt="logo">
     </div>
     <div>
       <h4>Product</h4>
-      <p>Overview</p>
-      <p>Pricing</p>
-      <p>Marketplace</p>
-      <p>Features</p>
-      <p>Integrations</p>
+      <p><a href="">Overview</a></p>
+      <p><a href="">Pricing</a></p>
+      <p><a href="">Marketplace</a></p>
+      <p><a href="">Features</a></p>
+      <p><a href="">Integrations</a></p>
     </div>
     <div>
       <h4>Company</h4>
-      <p>About</p>
-      <p>Team</p>
-      <p>Blog</p>
-      <p>Careers</p>
+      <p><a href="">About</a></p>
+      <p><a href="">Team</a></p>
+      <p><a href="">Blog</a></p>
+      <p><a href="">Careers</a></p>
     </div>
     <div>
       <h4>Connect</h4>
-      <p>Contact</p>
-      <p>Newsletter</p>
-      <p>LinkedIn</p>
+      <p><a href="">Contact</a></p>
+      <p><a href="">Newsletter</a></p>
+      <p><a href="">LinkedIn</a></p>
     </div>
+  </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
