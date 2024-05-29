@@ -1,0 +1,43 @@
+ <nav class="nav-list-desktop">
+      <div>
+        <img src="/images/logo.svg" alt="logo" class="logo">
+        <ul>
+          <div class="__nav">
+            <li>Product</li>
+            <img src="/images/icon-arrow-dark.svg" alt="icon-arrow">
+          </div>
+          <!-- <ul>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+          </ul> -->
+          <div class="__nav">
+            <li>Company</li>
+            <img src="/images/icon-arrow-dark.svg" alt="icon-arrow">
+          </div>
+          <!-- <ul>
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul> -->
+          <div class="__nav">
+            <li>Connect</li>
+            <img src="/images/icon-arrow-dark.svg" alt="icon-arrow">
+          </div>
+          <!-- <ul>
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>LinkedIn</li>
+          </ul> -->
+        </ul>
+      </div>
+      <div class="register-ls">
+        <ul>
+          <li>Login</li>
+          <li class="sign-up">Sign Up</li>
+        </ul>
+      </div>
+    </nav>
