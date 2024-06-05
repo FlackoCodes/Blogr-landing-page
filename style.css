@@ -17,8 +17,8 @@ header{
     url('./images/bg-pattern-intro-mobile.svg') no-repeat center;
     background-size: 250%;
     color: hsl(0, 0%, 100%);
-    padding: 1.1rem;
-    margin-bottom: 3rem;
+    padding: 1.3rem;
+    margin-bottom: 2.8rem;
     border-bottom-left-radius: 100px;
 }
 
@@ -52,6 +52,7 @@ h1,h2,h3,h4,h5,h6{
 
 li{
     list-style-type: none;
+    cursor: pointer;
 }
 
 a{
@@ -71,18 +72,13 @@ img{
 .__w{
     display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: 1.6rem;
 }
 
 .__w li{
     font-weight: 700;
 }
 
-.__nav{
-    display: flex;
-    align-items: center;
-    gap: .2rem;
-}
 
 .register-ls li:nth-child(2){
     background-color: hsl(0, 0%, 100%);
@@ -141,15 +137,13 @@ img{
 }
 
 .nav-list-mobile{
-    display: grid;
-    place-content: center;
+    text-align: center;
     margin: 1rem 0;
     background-color: hsl(0, 0%, 100%);
     color: hsl(208, 49%, 24%);
-    padding: 1rem 0;
     border-radius: 5px;
-    font-weight: 700;
-
+    font-weight: 700; 
+    padding: 1rem .8rem;
 }
 
 .__nav li{
@@ -310,12 +304,16 @@ footer img{
 
 @media screen and (min-width: 768px) {
     .subs{
+        display: none;
+    }
+
+    .__w li:hover .subs{
         display: block;
         position: absolute;
         background-color: hsl(0, 0%, 100%);
         color: hsla(0, 0%, 0%, 0.781);
-        border-radius: 5px;
-        padding: .2rem .6rem;
+        border-radius: 2px;
+        padding: .4rem .8rem;
     }
 
     .subs li{
@@ -323,7 +321,13 @@ footer img{
         font-weight: 500;
         font-size: .7rem;
         cursor: pointer;
+        color: hsl(0, 0%, 50%);
+    }
 
+    .subs li:hover{
+        text-decoration: underline;
+        color: hsla(0, 0%, 0%, 0.854);
+        font-weight: 600;
     }
     
     .h__{
@@ -334,9 +338,9 @@ footer img{
         display: flex !important;
     }
 
-    .nav-list-desktop ul:nth-child(1){
+    /* .nav-list-desktop ul:nth-child(1){
         display: flex;
-    }
+    } */
 
     .main-1 h2{
         margin-top: 80px;

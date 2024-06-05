@@ -41,3 +41,48 @@
         </ul>
       </div>
     </nav>
+
+
+    ////
+
+ <nav>
+    <ul class="__w">
+      <li>
+        <img src="/images/logo.svg" alt="logo">
+      </li>
+      <div class="__nav">
+        <li>Product</li>
+        <img src="/images/icon-arrow-light.svg" alt="icon-arrow">
+      </div>
+      <div class="drop-down-menu">
+        <ul class="sub-prod subs">
+          <li>About</li>
+          <li>Team</li>
+          <li>Blog</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+        <div class="__nav">
+          <li>Company</li>
+          <img src="/images/icon-arrow-light.svg" alt="icon-arrow">
+        </div>
+        <ul class="sub-prod subs">
+          <li>About</li>
+          <li>Team</li>
+          <li>Blog</li>
+          <li>Careers</li>
+        </ul> 
+        <div class="__nav">
+          <li>Connect</li>
+          <img src="/images/icon-arrow-light.svg" alt="icon-arrow">
+        </div>
+      </ul>
+      <div class="register-ls">
+        <ul class="__w">
+          <li>Login</li>
+          <li class="sign-up">Sign Up</li>
+        </ul>
+      </div>
+   </nav>
+
+    ////

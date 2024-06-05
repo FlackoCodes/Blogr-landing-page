@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Blogr</title>
 
@@ -13,37 +14,38 @@
 <body>
   <header>
    <!-- Nav List Desktop  -->
-   <nav>
-    <ul class="__w">
-      <li>
+    <nav class="nav-list-desktop">
+      <ul class="__w">
         <img src="/images/logo.svg" alt="logo">
-      </li>
-      <div class="__nav">
-        <li>Product</li>
-        <img src="/images/icon-arrow-light.svg" alt="icon-arrow">
-      </div>
-      <div class="drop-down-menu">
-        <ul class="sub-prod subs">
-          <li>About</li>
-          <li>Team</li>
-          <li>Blog</li>
-          <li>Careers</li>
-        </ul>
-      </div>
-        <div class="__nav">
-          <li>Company</li>
-          <img src="/images/icon-arrow-light.svg" alt="icon-arrow">
-        </div>
-        <ul class="sub-prod subs">
-          <li>About</li>
-          <li>Team</li>
-          <li>Blog</li>
-          <li>Careers</li>
-        </ul> 
-        <div class="__nav">
-          <li>Connect</li>
-          <img src="/images/icon-arrow-light.svg" alt="icon-arrow">
-        </div>
+        <li>Product <i class="fas fa-caret-down"></i>
+          <div class="drop-down-menu">
+            <ul class="sub-prod subs">
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Integrations</li>
+            </ul>
+          </div>
+        </li>
+        <li>Company <i class="fas fa-caret-down"></i>
+          <div class="drop-down-menu">
+            <ul class="sub-prod subs">
+              <li>About</li>
+              <li>Team</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+        </li>
+        <li>contact <i class="fas fa-caret-down"></i>
+          <div class="drop-down-menu">
+            <ul class="sub-prod subs">
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>LinkedIn</li>
+            </ul>
+          </div>
+        </li>
       </ul>
       <div class="register-ls">
         <ul class="__w">
@@ -51,7 +53,7 @@
           <li class="sign-up">Sign Up</li>
         </ul>
       </div>
-   </nav>
+    </nav>
     <div class="h__">
       <div>
         <img src="/images/logo.svg" alt="logo" class="logo">
@@ -63,10 +65,10 @@
       <div class="nav-list-mobile">
       <ul>
         <div class="__nav prod">
-          <li>Product</li>
-          <img src="/images/icon-arrow-dark.svg" alt="icon-arrow">
+          <li class="prod-1">Product <i class="fas fa-caret-down"></i></li>
+          <!-- <img src="/images/icon-arrow-dark.svg" alt="icon-arrow"> -->
         </div>
-        <ul class="sub sub-prod">
+        <ul class="sub sub-prod-1">
           <li>Overview</li>
           <li>Pricing</li>
           <li>Marketplace</li>
@@ -74,8 +76,8 @@
           <li>Integrations</li>
         </ul>
         <div class="__nav comp">
-          <li>Company</li>
-          <img src="/images/icon-arrow-dark.svg" alt="icon-arrow">
+          <li>Company <i class="fas fa-caret-down"></i></li>
+          <!-- <img src="/images/icon-arrow-dark.svg" alt="icon-arrow"> -->
         </div>
         <ul class="sub sub-comp">
           <li>About</li>
@@ -84,8 +86,8 @@
           <li>Careers</li>
         </ul>
         <div class="__nav linkup">
-          <li>Connect</li>
-          <img src="/images/icon-arrow-dark.svg" alt="icon-arrow">
+          <li>Connect <i class="fas fa-caret-down"></i></li>
+          <!-- <img src="/images/icon-arrow-dark.svg" alt="icon-arrow"> -->
         </div>
         <ul class="sub sub-link">
           <li>Contact</li>
